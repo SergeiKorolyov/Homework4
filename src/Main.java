@@ -3,6 +3,8 @@ import java.util.List;
 
 public class Main {
 
+
+
     public static void main(String[] args) {
         Figures figure = new Figures("Figure", 4);
 
@@ -21,12 +23,12 @@ public class Main {
 
         List<Figures> list = new ArrayList<>();
         Picture picture = new Picture(list);
+        picture.setList(list);
         list.add(0, square);
         list.add(1, rectangle);
         list.add(2, circle);
         list.add(3, ball);
-
-
+        System.out.println(picture.getList());
 
 
     }

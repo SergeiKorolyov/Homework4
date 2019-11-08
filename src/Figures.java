@@ -7,7 +7,7 @@ public class Figures {
     private int lengthOfSecondSide;
     private double radius;
 
-    public Figures (String name, int lengthOfSide){
+    public Figures(String name, int lengthOfSide) {
         this.name = name;
         this.lengthOfSide = lengthOfSide;
     }
@@ -60,7 +60,7 @@ public class Figures {
         this.radius = radius;
     }
 
-    public String toString(){
-        return String.format("Name: %s, Perimeter: %d, Area: %f", getName(), getPerimeter(), getArea());
+    public String toString() {
+        return String.format("Name: %s Perimeter: %d Area: %f", getName(), getPerimeter(), getArea());
     }
 }
