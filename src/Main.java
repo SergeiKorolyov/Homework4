@@ -1,13 +1,8 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
 
 
 
     public static void main(String[] args) {
-        Figures figure = new Figures("Figure", 4);
-
 
         Figures square = new Square("Square", 3);
         System.out.println(square);
@@ -18,18 +13,25 @@ public class Main {
         Figures circle = new Circle("Circle", 4);
         System.out.println(circle);
 
-        Figures ball = new Ball("Ball", 5);
-        System.out.println(ball);
+        Figures sphere = new Sphere("Sphere", 5);
+        System.out.println(sphere);
 
-        List<Figures> list = new ArrayList<>();
-        Picture picture = new Picture(list);
-        picture.setList(list);
-        list.add(0, square);
-        list.add(1, rectangle);
-        list.add(2, circle);
-        list.add(3, ball);
-        System.out.println(picture.getList());
+        Figures circle1 = new Circle("Circle", 6);
 
+        Picture picture = new Picture();
+        picture.addFigures(square);
+        picture.addFigures(rectangle);
+        picture.addFigures(circle);
+        picture.addFigures(sphere);
+        picture.addFigures(circle1);
+
+        System.out.println(picture.perimeterOfAllFigures());
+
+        System.out.println(picture.areaOfAllFigures());
+
+        System.out.println(picture.namesOfAllFigures());
+
+        System.out.println(picture.mapOfFigures());
 
     }
 }

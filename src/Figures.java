@@ -1,4 +1,4 @@
-public class Figures {
+public abstract class Figures {
 
     private String name;
     private int perimeter;
