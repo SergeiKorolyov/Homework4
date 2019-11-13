@@ -1,5 +1,7 @@
-public class Main {
+import java.lang.reflect.Array;
+import java.util.*;
 
+public class Main {
 
 
     public static void main(String[] args) {
@@ -32,6 +34,19 @@ public class Main {
         System.out.println(picture.namesOfAllFigures());
 
         System.out.println(picture.mapOfFigures());
+
+        Array[][] field = new Array[10][10];
+        SeaBattleField newField = new SeaBattleField(field);
+
+        Mathematics mathematics = new Mathematics();
+
+        Map a = new HashMap();
+        Map b = new HashMap();
+        a.put("First", 4);
+        b.put("Second", 4);
+
+        System.out.println(mathematics.sum(a, b));
+
 
     }
 }
